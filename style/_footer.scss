@@ -1,0 +1,60 @@
+footer {
+    background: #D4D8D9;
+    .container {
+        .footerSec {
+            display: flex;
+            justify-content: space-between;
+            color: #2d2f2a;
+            padding: 50px 0;
+            @media screen and (max-width: 768px) {
+                display: block;
+                text-align: center;
+            }
+            .aboutPara {
+                width: 40%;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+                h2 {
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                }
+                p {
+                    width: 65%;
+                    line-height: 26px;
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .aboutPage {
+                h3 {
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                    @media screen and (max-width: 768px) {
+                        margin: 20px 0;
+                    }
+                }
+                li {
+                    line-height: 25px;
+                    a {
+                        color: #000;
+                        font-size: 20px;
+                        font-weight: 600;
+                        opacity: .9;
+                        color: #2d2f2a;
+                    }
+                }
+                .lastLink {
+                    li {
+                        a {
+                            font-weight: 400;
+                            color: #2d2f2a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

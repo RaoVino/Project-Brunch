@@ -1,0 +1,177 @@
+.mainContainer {
+    background: url(../images/headBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .firstbanner {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .banner {
+            width: 550px;
+            background-color: #ffffffc5;
+            margin: auto;
+            text-align: center;
+            padding: 60px 0;
+            h3 {
+                font-family: 'Cookie', cursive;
+                font-size: 75px;
+                font-weight: 400;
+                color: #2c3a42;
+                @media screen and (max-width: 414px) {
+                    font-size: 42px;
+                }
+            }
+            h2 {
+                font-size: 52px;
+                text-transform: uppercase;
+                color: #ad6c12;
+                font-style: normal;
+                font-weight: 300;
+                @media screen and (max-width: 414px) {
+                    font-size: 28px;
+                }
+            }
+            button {
+                width: 200px;
+                border: none;
+                padding: 10px;
+                outline: none;
+                a {
+                    font-size: 22px;
+                    color: #26363a;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 414px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        .headSec {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+            @media screen and (max-width: 900px) {
+                position: relative;
+            }
+            .logo {
+                h3 {
+                    font-size: 35px;
+                    font-style: normal;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 1055px) {
+                        font-size: 28px;
+                    }
+                }
+            }
+            .lists {
+                @media screen and (max-width: 900px) {
+                    position: absolute;
+                    text-align: center;
+                    right: 0;
+                    left: 0;
+                    top: 100px;
+                    padding: 20px 0;
+                    margin: auto;
+                    width: 100%;
+                    background-color: #293b3f;
+                    display: none;
+                }
+                ul {
+                    display: flex;
+                    @media screen and (max-width: 900px) {
+                        display: block;
+                    }
+                    li {
+                        @media screen and (max-width: 900px) {
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+                        a {
+                            font-size: 35px;
+                            font-style: normal;
+                            font-weight: 500;
+                            color: #FFFFFF;
+                            text-transform: uppercase;
+                            margin-left: 20px;
+                            &:hover {
+                                background: rgb(255, 94, 0);
+                            }
+                            @media screen and (max-width: 1055px) {
+                                font-size: 28px;
+                            }
+                            @media screen and (max-width: 900px) {
+                                font-size: 18px;
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+                &.active {
+                    @media screen and (max-width: 900px) {
+                        display: block;
+                    }
+                }
+            }
+            .ham {
+                cursor: pointer;
+                i {
+                    color: #FFFFFF;
+                    font-size: 22px;
+                }
+                display: none;
+                @media screen and (max-width: 900px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// -------Traditional Section-----
+.flavorSec {
+    background: none;
+    background-color: #293b3f;
+    padding: 60px 0;
+    .traditionalFlav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+        .traditional {
+            flex-basis: 55%;
+            h3 {
+                color: #FFFFFF;
+                font-size: 26px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 19px;
+                color: #FFFFFF;
+                font-style: normal;
+                line-height: 28px;
+                opacity: .7;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .traditionalImg {
+            flex-basis: 40%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

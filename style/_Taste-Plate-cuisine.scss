@@ -1,0 +1,229 @@
+.newSec {
+    background-color: #D4D8D9;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    .container {
+        .alldishSec {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+            .newTaste {
+                flex-basis: 28%;
+                margin: auto;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 40px;
+                    text-align: center;
+                }
+                ul {
+                    display: flex;
+                    @media screen and (max-width: 768px) {
+                        justify-content: center;
+                    }
+                    li {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: #293b3f;
+                        margin-right: 5px;
+                        margin-bottom: 20px;
+                    }
+                }
+                h3 {
+                    color: #2a3b40;
+                    font-size: 19px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    color: #2a3b40;
+                    font-size: 17px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+.plateSec {
+    background: url(../images/yourplatebg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        text-align: center;
+        padding: 40px 0;
+        .productsec {
+            background-color: #ffffffc0;
+            .yourplateSec {
+                display: flex;
+                flex-wrap: wrap;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
+                .platesecImg {
+                    flex-basis: 25%;
+                    @media screen and (max-width: 969px) {
+                        flex-basis: 50%;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+                .PlateIMG {
+                    display: none;
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                    }
+                }
+                .CurryIMG {
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+                .tikka {
+                    flex-basis: 25%;
+                    color: #304751;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    @media screen and (max-width: 969px) {
+                        flex-basis: 50%;
+                    }
+                    @media screen and (max-width: 768px) {
+                        padding: 20px 0;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        @media screen and (max-width: 969px) {
+                            font-size: 28px;
+                        }
+                        @media screen and (max-width: 414px) {
+                            font-size: 22px;
+                        }
+                    }
+                    p {
+                        font-size: 17px;
+                        width: 193px;
+                        margin: 10px 0;
+                        @media screen and (max-width: 969px) {
+                            font-size: 22px;
+                        }
+                        @media screen and (max-width: 768px) {
+                            width: 300px;
+                        }
+                        @media screen and (max-width: 414px) {
+                            font-size: 18px;
+                        }
+                        &:last-child {
+                            font-size: 19px;
+                            font-weight: bold;
+                            @media screen and (max-width: 969px) {
+                                font-size: 30px;
+                            }
+                            @media screen and (max-width: 414px) {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cuisine {
+    background: #D4D8D9;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    flex-direction: column;
+    .container {
+        .cuisinelist {
+            h2 {
+                font-size: 29px;
+                color: #2a3b40;
+                margin-bottom: 20px;
+                text-align: center;
+                @media screen and (max-width: 414px) {
+                    font-size: 22px;
+                }
+            }
+            p {
+                font-size: 19px;
+                color: #2a3b40;
+                text-align: center;
+                width: 720px;
+                margin: auto;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+            .empty {
+                display: flex;
+                justify-content: center;
+                margin: 40px 0;
+                @media screen and (max-width: 768px) {
+                    margin: 20px;
+                }
+                li {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #293b3f;
+                    margin-right: 5px;
+                    margin-bottom: 20px;
+                }
+            }
+            .book {
+                width: 500px;
+                margin: auto;
+                display: flex;
+                justify-content: space-evenly;
+                @media screen and (max-width: 768px) {
+                    justify-content: left;
+                    width: 60%;
+                }
+                li {
+                    font-size: 17px;
+                    color: #2a3b40;
+                    @media screen and (max-width: 768px) {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.discover {
+    background-color: #293b3f;
+    .container {
+        .cuisinelist {
+            h2 {
+                font-size: 87px;
+                color: #FFFFFF;
+            }
+            p {
+                color: #ffffff;
+                line-height: 28px;
+                font-weight: 300;
+                opacity: .8;
+            }
+            .empty {
+                display: block;
+                text-align: center;
+                li {
+                    color: #FFFFFF;
+                    width: 100%;
+                    font-size: 19px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

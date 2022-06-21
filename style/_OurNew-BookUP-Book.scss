@@ -1,0 +1,190 @@
+.bannertwo {
+    background: url(../images/headBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+    .ournewMenu {
+        background-color: #ffffffc0;
+        margin-top: 100px;
+        @media screen and (max-width: 768px) {
+            margin-top: 0;
+        }
+        .container {
+            @media screen and (max-width: 414px) {
+                padding: 20px 0;
+            }
+            .headings {
+                h1 {
+                    margin-bottom: 20px;
+                }
+            }
+            .newMenu {
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
+                .tikkaImg {
+                    background-color: #FFFFFF;
+                    width: 150px;
+                    height: 80px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media screen and (max-width: 1055px) {
+                        width: 180px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 120px;
+                    }
+                    @media screen and (max-width: 414px) {
+                        width: 180px;
+                    }
+                }
+                .tikkapara {
+                    margin-left: 10px;
+                    h4 {
+                        color: #304751;
+                        font-size: 18px;
+                        @media screen and (max-width: 414px) {
+                            font-size: 14px;
+                        }
+                    }
+                    p {
+                        color: #304751;
+                        font-size: 17px;
+                        margin: 10px 0;
+                        @media screen and (max-width: 414px) {
+                            font-size: 14px;
+                        }
+                        span {
+                            color: #304751;
+                            font-weight: bold;
+                            font-size: 17px;
+                            @media screen and (max-width: 414px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .productone {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+                }
+                .menuone {
+                    flex-basis: 40%;
+                }
+                .menuTwo {
+                    flex-basis: 40%;
+                    .productone {
+                        &:last-child {
+                            @media screen and (max-width: 414px) {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bookUpSec {
+    background: url(../images/bookupBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+// ----formSection----
+.formSec {
+    background-color: #293b3f;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 40px 0;
+    .container {
+        .headings {
+            margin-bottom: 20px;
+            h3 {
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+        .bookingSec {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 900px) {
+                display: block;
+            }
+            .dateSec {
+                label {
+                    font-size: 17px;
+                }
+                select,
+                input {
+                    display: block;
+                    margin-bottom: 30px;
+                    border: none;
+                    outline: none;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 5px;
+                    background: transparent;
+                    padding: 5px;
+                    width: 250px;
+                    margin-top: 10px;
+                    color: #FFFFFF;
+                    @media screen and (max-width: 955px) {
+                        width: 300px;
+                        padding: 10px;
+                    }
+                    @media screen and (max-width: 900px) {
+                        width: 100%;
+                    }
+                }
+                 ::-webkit-calendar-picker-indicator {
+                    filter: invert(1);
+                }
+                button {
+                    border: none;
+                    outline: none;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 5px;
+                    background: transparent;
+                    margin-top: 20px;
+                    width: 250px;
+                    padding: 5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    @media screen and (max-width: 900px) {
+                        width: 100%;
+                        padding: 10px;
+                    }
+                }
+                 ::placeholder {
+                    color: #FFFFFF;
+                }
+            }
+            .bookingOne {
+                flex-basis: 30%;
+            }
+            .bookingTwo {
+                flex-basis: 20%;
+                @media screen and (max-width: 900px) {
+                    margin-bottom: 20px;
+                }
+            }
+            .bookingThree {
+                flex-basis: 20%;
+            }
+        }
+    }
+}
